@@ -1,0 +1,44 @@
+//Respuesta 3
+
+Func Arbin::zurdo():logico
+
+entero:cont <-0
+logico : bandera <- Falso
+
+Inicio
+retornar instancia.validar(bandera,cont,instancia.raiz)
+
+fproc
+
+Proc Arbin::validacion(ref logico: band,ref entero: cont,Apuntador a Nodo p)
+
+Var 
+logico: band1<-falso,band2<-falso
+entero: dezI<-0,dezD<-0
+
+Inicio
+si (p=nulo)entonces
+cont <-0
+bandera<-verdad
+ sino
+	si(Pflechita.obtHizquierdo()=nulo elevado p flechita.obtHDerecho()=nulo)entonces
+
+cont<-1
+band<-verdad
+	sino
+instancia.validacion(bandera1,dezI,p)
+instancia.validacion(bandera2,dezD,p)
+
+si(bandera1 elevado bandera2 elevado (dezI>dezD))entonces
+bandera<-verdad
+cont<-dezI+dezD+1
+sino
+bandera<-falso
+Fsi
+Fsi
+Fsi 
+Fproc
+
+
+
+
